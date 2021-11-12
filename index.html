@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<title>About Me</title>-->
+	<title> Ayush Pandey </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="blog, accent, , Ayush Pandey, jekyll">
+    <meta name="author" content="">
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type = "text/javascript" src = "/~apandey/teaching.js"></script> 
+    <script>
+        $(document).ready(function() {
+        if(typeof YOUTUBE_VIDEO_MARGIN == 'undefined') {
+            YOUTUBE_VIDEO_MARGIN=5;
+        }
+        $('iframe').each(function(index,item) {
+            if($(item).attr('src').match(/(https?:)?\/\/www\.youtube\.com/)) {
+            var w=$(item).attr('width');
+            var h=$(item).attr('height');
+            var ar = h/w*100;
+            ar=ar.toFixed(2);
+            //Style iframe    
+            $(item).css('position','absolute');
+            $(item).css('top','0');
+            $(item).css('left','0');    
+            $(item).css('width','100%');
+            $(item).css('height','100%');
+            $(item).css('float','right');
+            $(item).css('margin-left','2px');
+            $(item).css('max-width',w+'px');
+            $(item).css('max-height', h+'px');        
+            $(item).wrap('<div style="max-width:'+w+'px;margin:0 auto; padding:'+YOUTUBE_VIDEO_MARGIN+'px;" />');
+            $(item).wrap('<div style="position: relative;padding-bottom: '+ar+'%; height: 0; overflow: hidden;" />');
+            }
+        });
+        });
+    </script>
+    
+    <meta name="description" content="">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link rel="alternate" type="application/rss+xml" title="Ayush Pandey RSS" href="/feed.xml" />
+    <link rel="stylesheet" href="/~apandey/css/main.css">
+    
+    
+    <!-- Facebook Open Graph -->
+    <meta name="og:description" content="">
+    <meta name="og:title" content="Ayush Pandey">
+    <meta name="og:url" content="/~apandey/index.html">
+    <meta name="og:type" content="article">
+    
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ayush Pandey">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:url" content="https://twitter.com/ayush9pandey">
+    
+        <meta name="twitter:image" content="">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar container">
+            <a id="author-name" class="alignable pull-left" href="/~apandey/index.html">Ayush Pandey</a>
+            <ul class="alignable pull-right navbar-ul">
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/contact.html">Contact</a>
+                    
+                    
+                        </li>
+                
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/teaching.html">Teaching & Mentoring</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                    
+                        <!-- <li class="alignable pull-right nav-list"><a href="/~apandey/projects.html">Projects</a>
+                    
+                    
+                        /
+                    
+                        </li> -->
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/publication.html">Publications</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/blog.html">Blog</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a target="_blank" href="/~apandey/Ayush_Pandey_CV.pdf">CV</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/index.html">About</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+            </ul>
+        </div>
+        <div style="clear:both"></div>
+        <hr>
+        
+            <div class="container content">
+                <h2 id="about-me">About Me</h2>
+
+<p><img class="profile-picture" src="Ayush1.jpg" /></p>
+
+<p>I am a PhD candidate in Control and Dynamical Systems at California Institute of Technology, working on modeling and analysis of synthetic biological circuits. I am working with <a href="http://www.cds.caltech.edu/~murray/wiki/index.php?title=Main_Page">Richard Murray</a> in the <a href="https://www.cds.caltech.edu/biocircuits/index.php/Main_Page">Biocircuits Lab</a>. Refer to the <a href="/~apandey/publication.html">Publications</a> page for more information on my current and past work. More informal technical posts are on the <a href = "/~apandey/blog.html">Blog</a> page.</p>
+
+<p>Before joining Caltech, I graduated with a bachelors and a masters degree from the Indian Institute of Technoloy (IIT) Kharagpur, India. My Bachelor of Technology degree is in instrumentation engineering and Master of Technology in 
+control systems engineering from the Electrical Engineering department.</p>
+
+<h2 id="research-interests">Research Interests</h2>
+
+<ul>
+  <li>Control theory</li>
+  <li>Systems and synthetic biology</li>
+  <li>Robustness of nonlinear systems</li>
+  <li>Artificial intelligence methods for systems modeling</li>
+</ul>
+
+<hr />
+<hr />
+
+<h2 id="news">Milestones </h2>
+                <ul>
+                    <li>November 2021: Released a summary video of my research on model reduction. You can watch the video here: <iframe width="630" height="323" src="https://www.youtube.com/embed/cYK3SOnMMoM" title="Robustness Guarantees for Structured Model Reduction of Dynamical Systems" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                    <li>September 2021: We organized a workshop at International Workshop on Bio-Design Automation (IWBDA) 2021 on "Chemical Reaction Network Compilation to Bayesian Parameter Inference". You can check out the workshop <a href = "https://www.iwbdaconf.org/2021/docs/CRNToBayesParamInference.pdf">poster</a> and the <a href = "https://www.youtube.com/watch?v=YT847E9_Dqs&ab_channel=Bio-DesignAutomationConsortium">recording on Youtube</a>. All content of the workshop was interactive using Google Colaboratory notebook, which is available <a href = "https://colab.research.google.com/drive/1S3dDRyfsnEft_dGcLlFfusVZvFzFcRLc?usp=sharing">here</a>.</li>
+                    <li>September 2021: Helped write a research grant proposal on forward design of synthetic biological circuits. Details soon.</li>
+                    <li>August 2021: Served as a reviewer for the Journal of Open Source Software (JOSS) to <a href = https://github.com/openjournals/joss-reviews/issues/3362">review</a> the paper on OSTIR: open source translation initiation rate prediction. Check out the software on <a href = "https://github.com/barricklab/ostir">Github</a> and the paper <a href = https://joss.theoj.org/papers/10.21105/joss.03362">here</a>.</li>
+                    <li>August 2021: Co-mentored three Caltech undergraduate students in their summer internship projects in our lab. Details on the Teaching and Mentoring <a href = "/~apandey/teaching.html">page</a>.</li>
+                    <li>July 2021: Our theory paper on robustness of model reduction for linear dynamical systems accepted at Conference on Decision and Control (CDC) 2021. You can read the paper <a href = "/~apandey/documents/cdc_2021.pdf"> PDF here</a>. I am also a student host volunteer for the conference - to be organized virtually in December 2021.</li>
+                    <li>May 2021: Joined the Biology and Biological Engineering (BBE) division Diversity, Equity, and Inclusion (DEI) committee as a representative from my lab.</li>
+                    <li>January 2021: Enrolled in the Physical Biology of the Cell course at Caltech taught by Rob Phillips. Great course material, all available online here: <a href = "http://www.rpgroup.caltech.edu/aph161/">BE/APh 161</a></li>
+                    <li>December 2020: Uploaded a <a href = "https://www.biorxiv.org/content/10.1101/2020.11.25.399287v1">bioRxiv preprint</a> on our latest work: "A two-state ribosome and protein model can robustly capture the chemical reaction dynamics of gene expression". I wrote a short <a href = "https://twitter.com/ayush9pandey/status/1333626512566673408">thread on Twitter</a> and presented this paper at the 1st International Bio-Design Research Confernece (virtually). My poster for the conference is <a href = "/~apandey/documents/poster_rdelta.pdf">here</a>.</li>
+                    <li>September 2020: I am now a beginner in Spanish! Enrolled in Spanish language learning course at Caltech.</li>
+                    <li>Access the archive of update posts <a href="/~apandey/archive_updates.html">here</a>.</li>
+                </ul>
+            </div>
+<hr />
+<hr /> 
+    </div>
+    
+</body>
